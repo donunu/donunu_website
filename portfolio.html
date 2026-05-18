@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dohyung Chung's Portfolio</title>
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="images/favcon_180.ico" sizes="180x180" />
+
+    <!-- common JS -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+    <!-- velocity css -->
+    <link rel="stylesheet" href="js/velocity/velocity.css">
+    <!-- Custom JS & CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+    
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="portfolio-inner">
+                <div class="portfolio-heading">
+                    <h2>PORTFOLIO</h2>
+                </div>
+
+                <div class="category-button">
+                    <button id="button-all">ALL</button>
+                    <button id="button-1">Package</button>
+                    <button id="button-2">UI/UX</button>
+                    <button id="button-3">Print/Layout</button>
+                    <!-- <button id="button-4">Illustration</button> -->
+                </div>
+
+                <div class="portfolio-list">
+                    <ul>
+                        <li>
+                            <div class="box category-1">
+                                <div class="thumbnail" id="thumbnail0"></div>
+                                <div class="detail" id="detail0">Theme: Economic, but effective<br>
+                                    Illustration / Layout / Typo
+                                </div>
+                                <!-- <div></div> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box category-2">
+                                <div class="thumbnail" id="thumbnail1"></div>
+                                <div class="detail" id="detail1">Participated in MigraineCue's service launching.<br>Logo / UI / Visual element design</div>
+                                <!-- <div></div> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box category-1">
+                                <div class="thumbnail" id="thumbnail2"></div>
+                                <div class="detail" id="detail2">
+                                    Designed package for PhysioCue Q1 and Q2 devices.<br>
+                                    Box layout / Icon / Manual book
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="box category-3">
+                                <div class="thumbnail" id="thumbnail3"></div>
+                                <div class="detail" id="detail3">
+                                    Designed web brochure, online ads, and also managed company's social media accounts including Instagram, LinkedIn, Twitter, and Facebook.
+                                    <br>
+                                    <a href="https://www.instagram.com/physiocue/" target="_blank">Click here to See MORE</a>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="box category-3">
+                                <div class="thumbnail " id="thumbnail4"></div>
+                                 <div class="detail" id="detail4">
+                                Designed posters, banners, and other materials for conferences and startup pitching events. Also designed detail pages for Physiocue's online mall.
+                                <br>
+                                </div>
+                            </div>                
+                        </li>
+                        <li>
+                            <div class="box category-2">
+                                <div class="thumbnail" id="thumbnail5"></div>
+                                <div class="detail" id="detail5">
+                                <br>
+                                Designed the structure and layout of company's website.
+                                <br>
+                                <a href="www.hantech.co" target="_blank">www.hantech.co</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="box category-2">
+                                <div class="thumbnail" id="thumbnail6"></div>
+                                <div class="detail" id="detail6">
+                                Participated 02Quick delivery service(B2B) launching.<br>
+                                UI&UX Design / QA 
+                                <br>
+                                <a href="http://ktlinkus.o2quick.co.kr/login" target="_blank">O2Quick</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box category-2">
+                                <div class="thumbnail" id="thumbnail7"></div>
+                                <div class="detail" id="detail7">
+                                    Senior team project(Design Capstone): Product and service design<br>
+                                    UI/UX communicaiton solution design for sharehouse residents
+                                    <br>
+                                    <a href="./files/knocknock.pdf" download>PDF Download (KOREAN)</a>
+                                </div>
+                            </div>
+
+                        </li>    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        $(function(){
+            $('#button-all').click(function(){
+                $('.box').show();
+            });
+            $('#button-1').click(function(){
+                $('.box').hide();
+                $('.category-1').show();
+            });
+            $('#button-2').click(function(){
+                $('.box').hide();
+                $('.category-2').show();
+            });
+            $('#button-3').click(function(){
+                $('.box').hide();
+                $('.category-3').show();
+            });
+            $('#button-4').click(function(){
+                $('.box').hide();
+                $('.category-4').show();
+            });
+        });
+        </script>
+</body>
+
+</html>

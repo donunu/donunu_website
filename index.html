@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dohyung Chung's Portfolio</title>
+  <link rel="icon" href="images/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="images/favcon_180.ico" sizes="180x180" />
+
+  <!-- common JS -->
+  <script src="js/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <!-- Page Scroll Effects JS & CSS  -->
+  <!-- <script src="js/velocity/modernizr.js"></script> -->
+  <script src="js/velocity/velocity.min.js"></script>
+  <script src="js/velocity/velocity.ui.min.js"></script>
+  <script src="js/velocity/main.js"></script>
+  <link rel="stylesheet" href="js/velocity/velocity.css">
+  <!-- Smooth Scrolling -->
+  <script src="js/jquery.scrollTo.min.js"></script>
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="js/home.js"></script>
+  <!-- Custom JS & CSS -->
+  <script src="custom.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+
+</head>
+<!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+
+<body data-hijacking="on" data-animation="catch">
+  <header>
+  </header>
+
+  <div class="container">
+
+    <section class="cd-section visible" id="home">
+      <div>
+        <div class="content-home">
+          <div class="home-inner">
+            <div class="home-img"></div>
+            <div class="home-heading">
+              <span>Dohyung</span>
+              <span>Chung</span>
+              <span>@donunu</span>
+            </div>
+            <div class="home-down">
+              <span id="scroll-down">Scroll Down <br><b>:)</b></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cd-section" id="recent">
+      <div>
+        <div class="content">
+          <div class="recent-inner">
+            <div class="recent-heading">
+              <h2>WORK</h2>
+            </div>
+            <div class="swiper swiper-container" style="z-index:0;">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/index_work/work1.png" alt="">
+                  <span>
+                    <strong>HTCharm KF94 Mask Package Design</strong>
+                    <p>Theme: Economic, but effective<br>
+                    Illustration, Layout, Typo</p>
+                  </span>
+
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/index_work/work2.png" alt="">
+                  <span>
+                    <strong>MigraineCue App Design</strong>
+                    <p>Theme: "Track & Treat!"<br>
+                    Logo, Illustration, UI, UX</p>
+                  </span>
+
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/index_work/work3.png" alt="">
+                  <span>
+                    <strong>Q1 (Health Care Device) Package Design</strong>
+                    <p>Theme: Flow, Refresh, Cool<br>
+                    Box Design, Manual Design</p>
+                  </span>
+
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/index_work/work4.png" alt="">
+                  <span>
+                    <strong>Marketing Materials Print Design</strong>
+                    <p>Brochure, Contents for Social Media, Banner, etc...</p>
+                  </span>
+
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/index_work/work5.png" alt="">
+                  <span>
+                    <strong>knocKnock UI/UX Design</strong>
+                    <p>Senior team project(Design Capstone): Product and service design
+                      UX/UI communicaiton solution design for sharehouse residents</p>
+                  </span>
+
+                </div>
+       
+       
+             
+
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cd-section" id="contact">
+      <div>
+        <div class="content">
+          <div class="contact-inner">
+            <div id="contact-heading">
+              <h2>CONTACT</h2>
+            </div>
+            <div class="contact-info">
+              <a href="https://www.linkedin.com/in/dohyungchung/" target="_blank">linkedIn</a>
+              <a href="https://www.facebook.com/IamDohyung/" target="_blank">Facebook</a>
+              <a href="https://www.instagram.com/donunu/" target="_blank">Instagram</a>
+              <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=dohyungchung@gmail.com" 
+                target="_blank">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: 3,
+      centeredSlides: false,
+      spaceBetween: 0,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      observer: true,
+      observeParents: true,
+    });
+  </script>
+</body>
+
+</html>
