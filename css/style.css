@@ -1,0 +1,816 @@
+/* Google Web Font : Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Google Web Font : Amatic SC */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+/* Google Web Font : Architects Daughter */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+/* Google Web Font : Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Google Web Font : Nunito Sans */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/* Google Web Font : Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+/* Default CSS */
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    color: #222;
+    /* font-size: 16px !important; */
+    margin: 0;
+    height: 100vh;
+    background-color: #fff;
+}
+
+
+/* Entire Layout */
+.cd-section {
+    height: 100vh;
+}
+
+.cd-section>div {
+    height: 100%;
+    position: relative;
+}
+
+.content-home {
+    /* background-color: #fff; */
+    position: absolute;
+    width: calc(100% - 200px);
+    height: calc(100% - 80px);
+    left: 100px;
+    bottom: 20px;
+    overflow: hidden;
+}
+
+.content {
+    /* background-color: #fff; */
+    position: absolute;
+    width: calc(100% - 200px);
+    height: calc(100% - 80px);
+    left: 100px;
+    bottom: 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ################## Section : Home ################ */
+.home-inner {
+    background-color: #fff;
+    height: 100%;
+    position: relative;
+}
+
+.home-heading {
+    position: absolute;
+    top: 50%;
+    left: 250px;
+    transform: translateY(-50%);
+}
+
+.home-heading span {
+    display: block;
+    font-size: 100px;
+    color: rgb(29, 29, 29);
+    font-weight: 600;
+    line-height: 1.1em;
+    /* width: 100; */
+    overflow: hidden;
+    animation: reveal 2s ease-in-out both;
+}
+
+.home-heading span:nth-child(1) {}
+
+.home-heading span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.home-heading span:nth-child(3) {
+    font-size: 36px;
+    font-weight: 300;
+    animation-delay: .4s;
+}
+
+@keyframes reveal {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.home-down {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #111;
+    left: 50%;
+    top: 80%;
+    margin-left: -50px;
+    margin-top: -20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+#scroll-down {
+    display: block;
+    animation: none;
+    color: #fff;
+    width: 100%;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 12pt;
+    line-height: 1.4em;
+
+}
+
+/* ################## Section : Work ################ */
+.recent-inner {
+    background-color: #fff;
+    height: 100%;
+
+}
+
+.recent-heading {}
+
+.recent-heading>h2 {
+    /* border: 1px solid #000; */
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-top: 200px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.recent-work {}
+
+.swiper-container {
+    height: 50vh;
+    margin-top: 30px;
+    padding-top: 20px;
+    /* border: 1px solid #000; */
+}
+
+.swiper-slide {
+    background: transparent;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 60px;
+    /* border: 1px solid red; */
+}
+
+.swiper-slide img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
+    border-radius: 5%;
+    /* background-color: blue; */
+}
+
+.swiper-slide span {
+    display: block;
+    line-height: 0.8em;
+    /* border: 1px solid #000; */
+}
+
+.swiper-slide strong {
+    display: block;
+    padding: 20px 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.swiper-slide p {
+    font-size: 16px;
+}
+
+/* ################## Section : Contact ################ */
+.contact-inner {
+    background-color: #fff;
+    height: 100%;
+}
+
+.contact-heading {}
+
+#contact-heading>h2 {
+    text-transform: uppercase;
+    padding-top: 200px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.contact-info {
+    margin-top: 70px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.contact-info a {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    margin: 15px 30px;
+    padding: 20px 5px;
+    color: rgb(105, 105, 105);
+    background-color: #fff;
+    border-radius: 50%;
+    border-right: 3px solid rgb(212, 212, 212);
+    border-bottom: 3px solid rgb(212, 212, 212);
+   
+}
+
+
+.contact-info a:hover {
+    /* border-radius: 0; */
+    border: none;
+    height: 100%;
+    color: #fff;
+    transform: scale(1.3);
+    transition: .5s;
+}
+
+.contact-info a:hover:nth-child(1) {
+    background-color: rgb(0, 98, 190);
+}
+
+.contact-info a:hover:nth-child(2) {
+    background-color: rgb(44, 28, 184);
+}
+
+.contact-info a:hover:nth-child(3) {
+    background-color: rgb(170, 34, 182);
+}
+
+.contact-info a:hover:nth-child(4) {
+    background-color: rgb(196, 17, 17);
+}
+
+/* ################## ABOUT ################ */
+/* ################## - Resume ################ */
+
+.about-heading>h2 {
+    /* border: 5px solid #000; */
+    text-transform: uppercase;
+    padding-top: 200px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 100;
+    position: relative;
+    color: #fff;
+}
+
+/* .about-heading>h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 20px;
+    border: 1px solid #000;
+} */
+.about-heading {
+    background: rgb(249, 255, 0);
+    background: linear-gradient(90deg, rgb(250, 96, 237) 0%, rgba(215, 255, 0, 1) 100%);
+}
+
+
+.about-inner {
+    background-color: #fff;
+    height: 100%;
+}
+.describe{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(71, 5, 104);
+    margin-bottom: 10px;
+}
+.resume {
+    margin-top: 50px;
+}
+.resume>span {
+    margin-bottom: 10px;
+}
+.resume>p{
+    font-size: 24px;
+    line-height: 1.4em;
+    width: 90%;
+    margin: 40px;
+    font-weight: 300;
+}
+.resume ul li {
+    line-height: 1.4em;
+}
+#name {
+    font-family: 'Nunito Sans', sans-serif;
+    display: block;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+}
+#download_resume{
+    display: block;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    border-right: 3px solid rgb(42, 73, 160);
+    border-bottom: 3px solid rgb(42, 73, 160);
+    background-color: rgb(115, 113, 252);
+    color: rgb(255, 255, 255);
+    padding: 7px 10px;
+    border-radius: 50px;
+    font-weight: 500;
+}
+.subject {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 28px;
+    color:#fff;
+    background: linear-gradient(90deg, rgb(177, 124, 228) 0%, rgb(180, 100, 174) 100%);
+    padding: 10px 30px;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 0px;
+}
+.experience {
+    display: block;
+    text-align: center;
+    /* border: 1px solid #000; */
+}
+.subject-detail {
+    display: block;
+    color: rgba(79, 103, 206, 0.8);
+    background-color: rgba(238, 238, 238);
+    width: 30%;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 40px auto 20px;
+}
+/* .subject-detail::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(79, 103, 206, 0.863);
+    border: 2px dotted rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-bottom: 1px;
+    margin-right: 18px;
+} */
+.company_jobtitle{
+    color: rgb(177, 220, 255);
+    font-weight: bold;
+}
+details>span{
+    display: block;
+    max-width: 210px;
+    color: rgb(206, 206, 206);
+}
+
+#designer {
+    display: inline-block;
+}
+
+#designer li {
+    margin: 0px 20px 10px 0px;
+    padding: 10px;
+    color: rgb(238, 156, 238);
+    background: #111;
+    text-align: left;
+
+}
+
+#barista {
+    display: inline-block;
+}
+
+#barista li {
+    margin: 0px 0px 10px 20px;
+    padding: 10px;
+    color: peachpuff;
+    background: #111;
+    text-align: left;
+}
+
+#study {
+    display: inline-block;
+}
+
+#study li {
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    color: rgb(148, 201, 138);
+    background: #111;
+    text-align: left;
+}
+
+#volunteer {
+    display: inline-block;
+}
+
+#volunteer li {
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    color: rgb(138, 200, 201);
+    background: #111;
+    text-align: left;
+}
+.resume>div:last-child{
+    display: block;
+    height: 70px;
+}
+.ability>li{
+/* border: 1px solid #000; */
+    margin-bottom: 10px;
+}
+.ability>li>span{
+    line-height: 2em;
+}
+progress[value]::-webkit-progress-bar {
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 2px 5px rgba(189, 189, 189, 0.25) inset;
+}
+#progress[value] {
+    margin:0 auto;
+    appearance: none;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#progress[value]::-webkit-progress-value {
+    background-image: linear-gradient(to left, #2ecc71, #3498db);
+}
+#school {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.three_things{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.three_things_list{
+    line-height: 1.8em;
+}
+.three_things_list p{
+    font-size: 32px;
+    font-weight: 700;
+    /* border: 1px solid #000; */
+    font-family: 'Amatic SC', cursive;
+    border: 1px solid #000;
+    border-radius: 10px;
+    border-style: dashed;
+    padding: 10px;
+    display: inline-block;
+    margin: 20px auto 10px;
+}
+.three_things_list span{
+    /* font-family: 'Amatic SC', cursive; */
+    /* font-family: 'Architects Daughter', cursive; */
+    display: block;
+    font-size: 18px;
+    line-height: 1.4em;
+    font-weight: 300;
+}
+#followme{
+    display: inline-block;
+    border-right: 3px solid rgb(160, 42, 160);
+    border-bottom: 3px solid rgb(160, 42, 160);
+    background-color: rgb(197, 154, 233);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 10px;
+    border-radius: 50px;
+    font-family: 'Amatic SC', cursive;
+}
+/* ################## PORTFOLIO ################ */
+/* ################## - all projects ################ */
+.portfolio-inner {
+    text-align: center;
+}
+.portfolio-heading>h2 {
+    /* border: 1px solid #000; */
+    text-transform: uppercase;
+    padding-top: 200px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 100;
+    color: #fff;
+}
+
+.portfolio-heading {
+    background: rgb(249, 255, 0);
+    background: linear-gradient(90deg, rgb(250, 96, 237) 0%, rgba(215, 255, 0, 1) 100%);
+}
+
+/* 
+.filter{}
+.filter > button {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin: 20px 10px;
+    border: 1px solid transparent;
+    background-color: rgb(241, 85, 65);
+    color: #fff;
+} */
+/* .filter > button:hover {
+    background-color: rgb(191, 111, 245);
+    color: #fff;
+
+} */
+.category-button>button{
+    margin: 20px 5px;
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    /* border-radius: 5px; */
+    border: none;
+    background: rgb(113, 219, 178);
+}
+#button-all{
+    background: rgb(113, 185, 219);
+
+}
+.box {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.category-1 {}
+.category-2 {}
+.category-3 {}
+.category-4 {}
+
+
+.portfolio-list {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.portfolio-list:last-child {
+    /* border: 1px solid #000; */
+    padding-bottom: 70px;
+}
+
+.detail {
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#detail0::before,
+#detail1::before,
+#detail2::before,
+#detail3::before,
+#detail4::before,
+#detail5::before,
+#detail6::before,
+#detail7::before
+ {
+    display: block;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0 15px;
+
+}
+
+#detail5::before{
+    margin-bottom: -8px;
+}
+
+#detail3>a,
+#detail5>a,
+#detail6>a,
+#detail7>a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(48, 189, 199);
+    padding: 5px 20px;
+    margin-top: 15px;
+}
+
+#detial0,
+#detail1,
+#detail2,
+#detail3,
+#detail4,
+#detail5,
+#detail6,
+#detail7
+{
+}
+#thumbnail0 {
+    background-image: url(/images/portfolio/0.png);
+
+}
+#detail0::before {
+    content: 'KF94 Mask Package Design - HTCHARM'
+}
+
+#thumbnail1 {
+    background-image: url(/images/portfolio/1.png);
+}
+
+#detail1::before {
+    content: 'Mobile App Design - MigraineCue';
+}
+
+
+#thumbnail2 {
+    background-image: url(/images/portfolio/2-1.png);
+}
+
+#detail2::before {
+    content: 'Health Device Package Design - Q1 Q2';
+}
+
+
+#thumbnail3 {
+    background-image: url(/images/portfolio/3.gif);
+    height:300px;
+}
+#detail3::before {
+    content: 'Online Ad - PhysioCue';
+}
+
+
+#thumbnail4 {
+    background-image: url(/images/portfolio/4.png);
+}
+#detail4::before {
+    content: 'Other marketing elements - PhysioCue';
+}
+
+
+#thumbnail5 {
+    background-image: url(/images/portfolio/5.png);
+    height:300px;
+}
+#detail5::before {
+    content: 'Website Renewal Design - Hantech';
+
+}
+
+#thumbnail6 {
+    background-image: url(/images/portfolio/6.png);
+}
+#detail6::before {
+    content: 'Online Service Launching - O2Quick';
+
+}
+#thumbnail7 {
+    background-image: url(/images/portfolio/7-1.png);
+}
+#detail7::before {
+    content: 'knocKnock(2015)';
+
+}
+
+
+/* ################## CONTACT ################ */
+/* ################## - social media ################ */
+.contact-inner{
+    text-align: center;
+}
+.contact-heading>h2 {
+    /* border: 1px solid #000; */
+    text-transform: uppercase;
+    padding-top: 200px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 100;
+    color: #fff;
+}
+
+.contact-heading {
+    background: rgb(249, 255, 0);
+    background: linear-gradient(90deg, rgb(250, 96, 237) 0%, rgba(215, 255, 0, 1) 100%);
+}
+.bye {
+    display: block;
+    margin: 0 auto;    
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 1.4em;
+    width: 90%;
+    font-weight: 300;
+}
+
+.nursing-portfolio-page {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 20px;
+}
+.portfolio-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 50px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about-heading h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.about-heading p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.section-box {
+    margin-bottom: 35px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #f8f9fb;
+}
+
+.subject-detail {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 3px solid #7c9c8c;
+    padding-bottom: 6px;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.info-item {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.info-item strong {
+    display: block;
+    font-size: 17px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.info-item p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
