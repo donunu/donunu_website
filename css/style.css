@@ -84,6 +84,7 @@ body {
     top: 50%;
     left: 250px;
     transform: translateY(-50%);
+    white-space: nowrap;
 }
 
 .home-heading span {
